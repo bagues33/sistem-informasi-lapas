@@ -1,0 +1,12 @@
+arrbulan = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
+date = new Date();
+millisecond = date.getMilliseconds();
+detik = date.getSeconds();
+menit = date.getMinutes();
+jam = date.getHours();
+hari = date.getDay();
+tanggal = date.getDate();
+bulan = date.getMonth();
+tahun = date.getFullYear();
+console.log(tanggal+"-"+arrbulan[bulan]+"-"+tahun+"<br/>"+jam+" : "+menit+" : "+detik+"."+millisecond);
+document.getElementById("waktu").innerHTML = tanggal + " " + arrbulan[bulan] + " " + tahun;
